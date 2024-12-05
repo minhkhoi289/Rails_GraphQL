@@ -60,6 +60,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    base64 (0.2.0)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
     builder (3.3.0)
@@ -80,6 +81,10 @@ GEM
     ffi (1.17.0-x86_64-linux-musl)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    graphiql-rails (1.10.0)
+      railties
+    graphql (2.3.7)
+      base64
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     listen (3.9.0)
@@ -183,7 +188,7 @@ PLATFORMS
   arm-linux
   arm-linux-gnu
   arm-linux-musl
-  arm64-darwin
+  arm64-darwin-23
   x86-linux
   x86-linux-gnu
   x86-linux-musl
@@ -195,11 +200,14 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  graphiql-rails
+  graphql
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 6.1.7, >= 6.1.7.8)
   spring
+  sprockets-rails
   tzinfo-data
 
 RUBY VERSION
